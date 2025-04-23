@@ -11,16 +11,6 @@
     object-position: center -20px;
   }
   
-  .hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-    text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.6);
-  }
-  
   .hero-text h1 {
     font-size: 3em;
     margin: 0;
@@ -33,6 +23,40 @@
   
   body {
     background-color: #141117;
+  }
+  
+  .navbar {
+    background-color: #D83148;
+    padding: 0.5em 0;
+    text-align: center;
+  }
+  
+  .nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+  }
+  
+  .nav-list li a {
+    color: #141117;
+    text-decoration: none;
+    font-family: "Chelsea Market", system-ui;
+    font-weight: bold;
+    font-size: 1.7em;
+    transition: color 0.2s ease;
+  }
+  
+  .nav-list li a:hover {
+    color: #fff;
+  }
+
+  .chelsea-market-regular {
+    font-family: "Chelsea Market", system-ui;
+    font-weight: 400;
+    font-style: normal;
   }
   
   
