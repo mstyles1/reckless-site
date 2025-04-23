@@ -1,0 +1,23 @@
+.hero-header {
+    background-image: url("../images/billboard-cropped.JPG"); 
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .hero-text h1 {
+    font-size: 3em;
+    margin: 0;
+  }
+  
+  .hero-text p {
+    font-size: 1.5em;
+    margin-top: 10px;
+  }
+  
