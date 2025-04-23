@@ -25,12 +25,36 @@
     background-color: #141117;
   }
   
-  .navbar {
+  .navbar-home {
     background-color: #D83148;
     padding: 0.5em 0;
     text-align: center;
   }
   
+  .navbar-glass {
+    background-color: #D83148;
+    padding: 0.5em 0;
+    text-align: center;
+  }
+
+  .navbar-partners {
+    background-color: #D83148;
+    padding: 0.5em 0;
+    text-align: center;
+  }
+
+  .navbar-gallery {
+    background-color: #D83148;
+    padding: 0.5em 0;
+    text-align: center;
+  }
+
+  .navbar-contact {
+    background-color: #D83148;
+    padding: 0.5em 0;
+    text-align: center;
+  }
+
   .nav-list {
     list-style-type: none;
     margin: 0;
