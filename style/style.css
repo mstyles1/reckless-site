@@ -82,8 +82,46 @@
     font-weight: 400;
     font-style: normal;
   }
-  
-  .mission-blurb {
-    color: #fff;
+
+  .wendy-one-regular {
+    font-family: "Wendy One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
   }
   
+  .mission-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    background-color: #003052; /* light background for the box */
+    border: 2px solid #ccc;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin: 30px auto;
+  }
+  
+  .mission-blurb {
+    font-family: "Wendy One", sans-serif;
+    color: white;
+    flex: 1;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    min-width: 250px;
+  }
+  
+  .mission-image img {
+    max-width: 350px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  h4 {
+    text-align: center;
+    font-family: "Wendy One", sans-serif;
+    font-size: 2.2rem;
+  }
