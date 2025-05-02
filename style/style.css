@@ -161,14 +161,20 @@ h2 {
     font-size: 1.3rem;
 }
 
+/* Glass Section */
+
 .glass-gallery {
+    background-color: #d86031;
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 items per row */
     gap: 30px;
     max-width: 1000px;
     margin: 0 auto;
+    border: 2px solid #ccc;
+    border-radius: 16px;
   }
 
+/* Partners Section */
 .partners-container {
     padding: 40px 20px;
     background-color: #0F4323;
@@ -233,7 +239,14 @@ h2 {
     letter-spacing: .1rem;
   }
 
-  /* Contact section layout */
+/*Instagram gallery section*/
+.insta-gallery {
+    background-color: #E5DA10;
+    border: 2px solid #ccc;
+    border-radius: 16px;
+}
+
+/* Contact section */
 #contact {
     display: flex;
     flex-direction: column; /* stack children vertically */
@@ -284,17 +297,19 @@ h2 {
   /* Submit button */
   .form-group button {
     padding: 0.75rem 1.5rem;
-    background-color: #007BFF;
-    color: white;
+    background-color: white;
+    color: black;
     border: none;
     border-radius: 6px;
     cursor: pointer;
+    font-family: "Cal Sans", sans-serif;
     font-size: 1rem;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.15s ease;
   }
   
   .form-group button:hover {
-    background-color: #0056b3;
+    background-color: #EFE643;
+    color: black;
   }
   
 
