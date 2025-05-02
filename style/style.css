@@ -246,6 +246,12 @@ h2 {
     border-radius: 16px;
 }
 
+.instagram-embed {
+    background-color: #E5DA10;
+    border: 2px solid #ccc;
+    border-radius: 16px; 
+}
+
 /* Contact section */
 #contact {
     display: flex;
