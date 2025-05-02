@@ -11,6 +11,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <div id="age-gate-overlay">
+        <div class="age-gate-box">
+          <h2>Are you 21 or older?</h2>
+          <button onclick="verifyAge(true)">Yes</button>
+          <button onclick="verifyAge(false)">No</button>
+        </div>
+      </div>      
+
     <header class="hero-header">
         <a href="../index.html">
           <img src="images/billboard-cropped.JPG" alt="Reckless Hippie Billboard" class="hero-img">
@@ -182,6 +191,26 @@
       </section>      
 
     <script src="js/script.js"></script>
+    <script>
+        function verifyAge(isOfAge) {
+          if (isOfAge) {
+            document.getElementById('age-gate-overlay').style.display = 'none';
+            localStorage.setItem('ageVerified', 'true');
+          } else {
+            window.location.href = 'https://www.responsibility.org/';
+          }
+        }
+      
+        // Show age gate only if not previously verified
+        window.onload = function () {
+          if (localStorage.getItem('ageVerified') !== 'true') {
+            document.getElementById('age-gate-overlay').style.display = 'flex';
+          } else {
+            document.getElementById('age-gate-overlay').style.display = 'none';
+          }
+        };
+      </script>
+      
 </body>
 </html>
 
