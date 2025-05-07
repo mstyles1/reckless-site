@@ -237,9 +237,9 @@ h2 {
   background-color: white;
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 items per row */
-  gap: 30px;
-  padding: 20px;
-  max-width: 1000px;
+  gap: 15px;
+  padding: 10px;
+  max-width: 900px;
   margin: 30px auto 0;
   border: 2px solid #ccc;
   border-radius: 16px;
@@ -248,14 +248,14 @@ h2 {
 }
 
 .partner-logos-box img {
-  height: 200px; /* Increased from 60px */
-  width: 200px; /* Uniform size */
+  height: 150px; /* Increased from 60px */
+  width: 150px; /* Uniform size */
   object-fit: contain;
 }
 
 .partner-logos-box img.munchies-logo {
-  height: 300px;
-  width: 300px;
+  height: 250px;
+  width: 250px;
 }
   
 /*Instagram gallery section*/
