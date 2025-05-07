@@ -174,6 +174,11 @@ h2 {
     border-radius: 16px;
   }
 
+  .glass-item img.neyland-glass {
+    height: 500px;
+    width: 500px; 
+  }
+
 /* Partners Section */
 .partners-container {
     padding: 40px 20px;
@@ -234,14 +239,14 @@ h2 {
 
 /* Partners Small Box */
 .partner-logos-box {
-  background-color: white;
+  background-color: #0F4323;
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 items per row */
   gap: 15px;
   padding: 10px;
   max-width: 900px;
   margin: 30px auto 0;
-  border: 5px solid #008FF5;
+  border: 2px solid white;
   border-radius: 16px;
   justify-items: center; /* Center logos in grid cells */
   align-items: center;
@@ -251,12 +256,14 @@ h2 {
   height: 150px; /* Increased from 60px */
   width: 150px; /* Uniform size */
   object-fit: contain;
+  border: 2px solid black;
+  border-radius: 16px;
 }
 
-.partner-logos-box img.munchies-logo {
-  height: 250px;
-  width: 250px;
+.partner-logos-box img.good-logo {
+  background-color: white;
 }
+
   
 /*Instagram gallery section*/
 .insta-gallery {
