@@ -241,7 +241,7 @@ h2 {
   padding: 10px;
   max-width: 900px;
   margin: 30px auto 0;
-  border: 2px solid #ccc;
+  border: 5px solid #008FF5;
   border-radius: 16px;
   justify-items: center; /* Center logos in grid cells */
   align-items: center;
