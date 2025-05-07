@@ -232,6 +232,32 @@ h2 {
     letter-spacing: .1rem;
   }
 
+/* Partners Small Box */
+.partner-logos-box {
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+  gap: 30px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 30px auto 0;
+  border: 2px solid #ccc;
+  border-radius: 16px;
+  justify-items: center; /* Center logos in grid cells */
+  align-items: center;
+}
+
+.partner-logos-box img {
+  height: 200px; /* Increased from 60px */
+  width: 200px; /* Uniform size */
+  object-fit: contain;
+}
+
+.partner-logos-box img.munchies-logo {
+  height: 300px;
+  width: 300px;
+}
+  
 /*Instagram gallery section*/
 .insta-gallery {
     background-color: #E5DA10;
