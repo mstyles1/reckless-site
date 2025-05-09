@@ -164,20 +164,52 @@ h2 {
 /* Glass Section */
 
 .glass-gallery {
-    background-color: #d86031;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 items per row */
-    gap: 30px;
-    max-width: 1000px;
-    margin: 0 auto;
-    border: 2px solid #ccc;
-    border-radius: 16px;
-  }
+  background-color: #d86031;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 columns to allow pyramid shaping */
+  gap: 20px;
+  padding: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  border: 2px solid #ccc;
+  border-radius: 16px;
+}
 
-  .glass-item img.neyland-glass {
-    height: 500px;
-    width: 500px; 
-  }
+/* Top (centered) main piece */
+.glass-item.neyland-glass {
+  grid-column: 2 / span 3; /* spans middle 3 columns */
+  display: flex;
+  justify-content: center;
+}
+
+.glass-item.neyland-glass img {
+  height: 400px;
+  width: auto;
+  border-radius: 8px;
+}
+
+/* Two middle-row pieces */
+.glass-gallery .glass-item:nth-child(2) {
+  grid-column: 2 / span 1;
+}
+.glass-gallery .glass-item:nth-child(3) {
+  grid-column: 4 / span 1;
+}
+
+/* Three bottom-row pieces */
+.glass-gallery .glass-item:nth-child(4),
+.glass-gallery .glass-item:nth-child(5),
+.glass-gallery .glass-item:nth-child(6) {
+  grid-column: span 1;
+}
+
+/* General image styling */
+.glass-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
 
 /* Partners Section */
 .partners-container {
