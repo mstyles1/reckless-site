@@ -162,11 +162,10 @@ h2 {
 }
 
 /* Glass Section */
-
 .glass-gallery {
   background-color: #d86031;
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 5 columns to allow pyramid shaping */
+  grid-template-columns: repeat(5, 1fr);
   gap: 20px;
   padding: 30px;
   max-width: 1000px;
@@ -177,30 +176,34 @@ h2 {
 
 /* Top (centered) main piece */
 .glass-item.neyland-glass {
-  grid-column: 2 / span 3; /* spans middle 3 columns */
+  grid-column: 2 / span 3;
+  grid-row: 1;
   display: flex;
   justify-content: center;
 }
 
-.glass-item.neyland-glass img {
-  height: 400px;
-  width: auto;
-  border-radius: 8px;
-}
-
 /* Two middle-row pieces */
-.glass-gallery .glass-item:nth-child(2) {
-  grid-column: 2 / span 1;
+.glass-item.deserteagle-glass {
+  grid-column: 2;
+  grid-row: 2;
 }
-.glass-gallery .glass-item:nth-child(3) {
-  grid-column: 4 / span 1;
+.glass-item.charizard-glass {
+  grid-column: 4;
+  grid-row: 2;
 }
 
 /* Three bottom-row pieces */
-.glass-gallery .glass-item:nth-child(4),
-.glass-gallery .glass-item:nth-child(5),
-.glass-gallery .glass-item:nth-child(6) {
-  grid-column: span 1;
+.glass-item.tower1-glass {
+  grid-column: 1;
+  grid-row: 3;
+}
+.glass-item.shipinabottle-glass {
+  grid-column: 3;
+  grid-row: 3;
+}
+.glass-item.tower2-glass {
+  grid-column: 5;
+  grid-row: 3;
 }
 
 /* General image styling */
@@ -208,6 +211,7 @@ h2 {
   width: 100%;
   height: auto;
   border-radius: 8px;
+  border: 2px solid white;
 }
 
 
