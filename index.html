@@ -137,21 +137,56 @@
       
 
     <section id="gallery">
-        <h1>Gallery</h1>
-        <section id="insta-gallery">
-            <h2>Follow Us On Instagram</h2>
-            <div class="instagram-embed">
+      <h1>Gallery</h1>
+  
+      <!-- Slideshow Gallery -->
+      <div class="slideshow-container">
+          <div class="slide fade">
+              <img src="images/bluerifle-gallery.jpg" style="width:100%">
+          </div>
+          <div class="slide fade">
+              <img src="images/boobs-gallery.jpg" style="width:100%">
+          </div>
+          <div class="slide fade">
+              <img src="images/budzprerolls-gallery.jpg" style="width:100%">
+          </div>
+          <div class="slide fade">
+              <img src="images/center-gallery.jpg" style="width:100%">
+          </div>
+          <div class="slide fade">
+              <img src="images/drinks-gallery.jpg" style="width:100%">
+          </div>
+          <div class="slide fade">
+              <img src="images/eighths-gallery.jpg" style="width:100%">
+           </div>
+          <div class="slide fade">
+              <img src="images/lotr-gallery.jpg" style="width:100%">
+          </div>
+          <div class="slide fade">
+              <img src="images/mario-gallery.jpg" style="width:100%">
+          </div>
+  
+          <!-- Navigation buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+  
+      <!-- Instagram Embed -->
+      <section id="insta-gallery">
+          <h2>Follow Us On Instagram</h2>
+          <div class="instagram-embed">
               <iframe 
-                src="https://www.instagram.com/p/POST_ID/embed" 
-                width="400" 
-                height="480" 
-                frameborder="0" 
-                scrolling="no" 
-                allowtransparency="true">
+                  src="https://www.instagram.com/p/POST_ID/embed" 
+                  width="400" 
+                  height="480" 
+                  frameborder="0" 
+                  scrolling="no" 
+                  allowtransparency="true">
               </iframe>
-            </div>
-          </section>
-    </section>
+          </div>
+      </section>
+  </section>
+  
 
     <section id="contact">
         <h1>Contact Us</h1>
@@ -208,6 +243,26 @@
           }
         };
       </script>
+      <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("slide");
+          if (n > slides.length) { slideIndex = 1 }
+          if (n < 1) { slideIndex = slides.length }
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slides[slideIndex - 1].style.display = "block";
+        }
+        </script>
+        
       
 </body>
 </html>
