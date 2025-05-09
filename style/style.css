@@ -337,14 +337,16 @@ h2 {
 }
 
 .instagram-embed {
+    position: relative;
     background-color: #E5DA10;
     border: 2px solid #ccc;
     border-radius: 16px; 
+    max-width: 1000px;
 }
 
 .slideshow-container {
   position: relative;
-  max-width: 100%;
+  max-width: 1000px;
   margin: auto;
 }
 
