@@ -161,58 +161,86 @@ h2 {
     font-size: 1.3rem;
 }
 
-/* Glass Section */
+/* Glass Section Container */
 .glass-gallery {
   background-color: #d86031;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 30px;
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
   border: 2px solid #ccc;
   border-radius: 16px;
 }
 
-/* Top (centered) main piece */
-.glass-item.neyland-glass {
-  grid-column: 2 / span 3;
+/* Base image styling */
+.glass-item img {
+  border-radius: 8px;
+  border: 2px solid white;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Desert Eagle – Top Left (small) */
+.glass-item.deserteagle-glass {
+  grid-column: 1;
   grid-row: 1;
   display: flex;
   justify-content: center;
 }
+.glass-item.deserteagle-glass img {
+  height: 180px;
+}
 
-/* Two middle-row pieces */
-.glass-item.deserteagle-glass {
+/* Neyland Stadium – Top Middle (large) */
+.glass-item.neyland-glass {
   grid-column: 2;
-  grid-row: 2;
+  grid-row: 1;
+  display: flex;
+  justify-content: center;
 }
-.glass-item.charizard-glass {
-  grid-column: 4;
-  grid-row: 2;
+.glass-item.neyland-glass img {
+  height: 300px;
 }
 
-/* Three bottom-row pieces */
+/* Charizard – Top Right (small) */
+.glass-item.charizard-glass {
+  grid-column: 3;
+  grid-row: 1;
+  display: flex;
+  justify-content: center;
+}
+.glass-item.charizard-glass img {
+  height: 180px;
+}
+
+/* Bottom Row – Tower1, Ship, Tower2 (all small) */
 .glass-item.tower1-glass {
   grid-column: 1;
-  grid-row: 3;
+  grid-row: 2;
+  display: flex;
+  justify-content: center;
 }
 .glass-item.shipinabottle-glass {
-  grid-column: 3;
-  grid-row: 3;
+  grid-column: 2;
+  grid-row: 2;
+  display: flex;
+  justify-content: center;
 }
 .glass-item.tower2-glass {
-  grid-column: 5;
-  grid-row: 3;
+  grid-column: 3;
+  grid-row: 2;
+  display: flex;
+  justify-content: center;
+}
+.glass-item.tower1-glass img,
+.glass-item.shipinabottle-glass img,
+.glass-item.tower2-glass img {
+  height: 180px;
 }
 
-/* General image styling */
-.glass-item img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  border: 2px solid white;
-}
 
 
 /* Partners Section */
