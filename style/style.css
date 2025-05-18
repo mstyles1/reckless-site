@@ -241,8 +241,6 @@ h2 {
   height: 180px;
 }
 
-
-
 /* Partners Section */
 .partners-container {
     padding: 40px 20px;
@@ -337,12 +335,14 @@ h2 {
 }
 
 .instagram-embed {
-    position: relative;
     background-color: #E5DA10;
     border: 2px solid #ccc;
-    border-radius: 16px; 
+    border-radius: 16px;
     max-width: 1000px;
+    overflow: hidden;
 }
+
+/*Slideshow gallery section*/
 
 .slideshow-container {
   position: relative;
@@ -525,15 +525,57 @@ h2 {
 
 /* Mobile responsive */
 @media (max-width: 768px) {
-    .partners {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .partners-image,
-    .partners-info {
-      flex: 1 1 100%;
-      max-width: 100%;
-    }
+  /* Partners Section */
+  .partners {
+    flex-direction: column;
+    text-align: center;
   }
-  
+
+  .partners-image,
+  .partners-info {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  /* Glass Gallery */
+  .glass-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .glass-item {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .glass-item img {
+    width: 100%;
+    height: auto !important; /* Override fixed heights */
+  }
+
+  /* Partner Logos – Stack or Wrap */
+  .partner-logos-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .partner-logos-box img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .insta-gallery {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+}
