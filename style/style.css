@@ -20,31 +20,8 @@ body {
 }
 
 .navbar-home {
-    background-color: #D83148;
-    padding: 0.5em 0;
-    text-align: center;
-}
-
-.navbar-glass {
-    background-color: #33AAFF;
-    padding: 0.5em 0;
-    text-align: center;
-}
-
-.navbar-partners {
-    background-color: #39D070;
-    padding: 0.5em 0;
-    text-align: center;
-}
-
-.navbar-gallery {
-    background-color: #988AA8;
-    padding: 0.5em 0;
-    text-align: center;
-}
-
-.navbar-contact {
-    background-color: #E5DA10;
+    background-color: #141117;
+    transition: background-color 0.3s ease;
     padding: 0.5em 0;
     text-align: center;
 }
@@ -65,7 +42,7 @@ body {
     font-weight: bold;
     font-size: 1.7em;
     transition: color 0.2s ease;
-    letter-spacing: .15rem;
+    padding: 0em 1em;  
 }
 
 .nav-list li a:hover {
@@ -443,8 +420,8 @@ h2 {
 }
 
 .form-group button:hover {
-  background-color: #EFE643;
-  color: black;
+  background-color: #176434;
+  color: white;
 }
 
 /* Footer Contact Info */
@@ -459,7 +436,7 @@ h2 {
   letter-spacing: .1rem;
   font-family: "Cal Sans", sans-serif;;
   font-size: 1.1rem;
-  color: black;
+  color: white;
 }
 
 .footer-info p {
@@ -526,7 +503,15 @@ h2 {
 
 /* Mobile responsive */
 @media (max-width: 768px) {
-  
+
+  .nav-list {
+    gap: 0.5em; 
+  }
+
+  .nav-list li a {
+    padding: 0.3em 0.5em;
+    font-size: 1.2em; 
+  }
   .partners {
     flex-direction: column;
     text-align: center;

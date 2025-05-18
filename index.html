@@ -26,15 +26,16 @@
           <img src="images/billboard-cropped.JPG" alt="Reckless Hippie Billboard" class="hero-img">
         </a>
     </header>      
-    <nav class="navbar-home">
-        <ul class="nav-list">
-            <li><a href="/">Our Vibe</a></li>
-            <li><a href="#glass">Sick Glass</a></li>
-            <li><a href="#partners">Local Good Stuff</a></li>
-            <li><a href="#gallery">Galery</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-        </ul>
+    <nav class="navbar-home" id="navbar">
+      <ul class="nav-list">
+        <li data-color="#33AAFF"><a href="/">Our Vibe</a></li>
+        <li data-color="#FF8200"><a href="#glass">Sick Glass</a></li>
+        <li data-color="#39D070"><a href="#partners">Local Good Stuff</a></li>
+        <li data-color="#D83148"><a href="#gallery">Gallery</a></li>
+        <li data-color="#988AA8"><a href="#contact">Contact Us</a></li>
+      </ul>
     </nav>
+
              
     <section id="landing">
 
@@ -262,6 +263,21 @@
           }
           slides[slideIndex - 1].style.display = "block";
         }
+      /*navbar colorchange*/
+        const navbar = document.getElementById('navbar');
+        const navItems = document.querySelectorAll('.nav-list li');
+
+        navItems.forEach(item => {
+        const color = item.getAttribute('data-color');
+
+        item.addEventListener('mouseenter', () => {
+        navbar.style.backgroundColor = color;
+        });
+
+        item.addEventListener('mouseleave', () => {
+        navbar.style.backgroundColor = ''; 
+        });
+      });
         </script>
         
       
