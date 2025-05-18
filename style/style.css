@@ -59,12 +59,13 @@ body {
 }
 
 .nav-list li a {
-    color: #141117;
+    color: white;
     text-decoration: none;
     font-family: "Chelsea Market", system-ui;
     font-weight: bold;
     font-size: 1.7em;
     transition: color 0.2s ease;
+    letter-spacing: .15rem;
 }
 
 .nav-list li a:hover {
@@ -76,7 +77,7 @@ body {
     flex-direction: column;
     gap: 20px;
     padding: 20px;
-    background-color: #003052;
+    background-color: #0077CC;
     border: 2px solid #ccc;
     border-radius: 16px;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
@@ -163,7 +164,7 @@ h2 {
 
 /* Glass Section Container */
 .glass-gallery {
-  background-color: #d86031;
+  background-color: #FF8200;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
@@ -244,7 +245,7 @@ h2 {
 /* Partners Section */
 .partners-container {
     padding: 40px 20px;
-    background-color: #0F4323;
+    background-color: #176434;
     color: #fff;
     font-family: "Cal Sans", sans-serif;
     max-width: 1000px;
@@ -301,7 +302,7 @@ h2 {
 
 /* Partners Small Box */
 .partner-logos-box {
-  background-color: #0F4323;
+  background-color: #176434;
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 items per row */
   gap: 15px;
@@ -525,7 +526,7 @@ h2 {
 
 /* Mobile responsive */
 @media (max-width: 768px) {
-  /* Partners Section */
+  
   .partners {
     flex-direction: column;
     text-align: center;
@@ -537,7 +538,6 @@ h2 {
     max-width: 100%;
   }
 
-  /* Glass Gallery */
   .glass-gallery {
     display: flex;
     flex-direction: column;
@@ -553,10 +553,9 @@ h2 {
 
   .glass-item img {
     width: 100%;
-    height: auto !important; /* Override fixed heights */
+    height: auto !important; 
   }
 
-  /* Partner Logos – Stack or Wrap */
   .partner-logos-box {
     display: flex;
     flex-direction: column;
@@ -578,4 +577,11 @@ h2 {
     padding: 20px;
   }
 
+  .contact-form {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
 }
