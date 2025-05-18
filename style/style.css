@@ -20,7 +20,7 @@ body {
 }
 
 .navbar-home {
-    background-color: #141117;
+    background-color: #988AA8;
     transition: background-color 0.3s ease;
     padding: 0.5em 0;
     text-align: center;
@@ -41,7 +41,7 @@ body {
     font-family: "Chelsea Market", system-ui;
     font-weight: bold;
     font-size: 1.7em;
-    transition: color 0.2s ease;
+    transition: color 0.15s ease;
     padding: 0em 1em;  
 }
 
@@ -420,7 +420,7 @@ h2 {
 }
 
 .form-group button:hover {
-  background-color: #176434;
+  background-color: #89436E;
   color: white;
 }
 
@@ -464,7 +464,7 @@ h2 {
   }
   
   .age-gate-box {
-    background: #29222F;
+    background: #988AA8;
     padding: 2rem;
     border-radius: 12px;
     text-align: center;
