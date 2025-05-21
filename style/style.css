@@ -305,20 +305,21 @@ h2 {
 }
 
   
-/*Instagram gallery section*/
-.insta-gallery {
-    background-color: #E5DA10;
-    border: 2px solid #ccc;
-    border-radius: 16px;
+#insta-gallery {
+  text-align: center;            
+  display: flex; 
+  flex-direction: column;      
+  align-items: center;           
 }
 
 .instagram-embed {
-    background-color: #E5DA10;
-    border: 2px solid #ccc;
-    border-radius: 16px;
-    max-width: 1000px;
-    overflow: hidden;
+  border-radius: 16px;
+  max-width: 540px;          
+  width: 100%; 
+  margin: 0 auto;        
+  padding: 20px;
 }
+
 
 /*Slideshow gallery section*/
 
