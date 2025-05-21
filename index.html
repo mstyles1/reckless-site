@@ -245,66 +245,69 @@
 
 <!-- Facebook SDK script (standalone) -->
 <script async defer crossorigin="anonymous" 
-  src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v22.0">
+  src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v22.0"></script>
+
+<script src="js/script.js"></script>
+
+<script>
+  // Age verification logic
+  function verifyAge(isOfAge) {
+    if (isOfAge) {
+      document.getElementById('age-gate-overlay').style.display = 'none';
+      localStorage.setItem('ageVerified', 'true');
+    } else {
+      window.location.href = 'https://www.responsibility.org/';
+    }
+  }
+
+  window.onload = function () {
+    const ageGate = document.getElementById('age-gate-overlay');
+    if (localStorage.getItem('ageVerified') !== 'true') {
+      ageGate.style.display = 'flex';
+    } else {
+      ageGate.style.display = 'none';
+    }
+  };
 </script>
 
+<script>
+  // Slide show logic
+  let slideIndex = 1;
+  showSlides(slideIndex);
 
-    <script src="js/script.js"></script>
-    <script>
-        function verifyAge(isOfAge) {
-          if (isOfAge) {
-            document.getElementById('age-gate-overlay').style.display = 'none';
-            localStorage.setItem('ageVerified', 'true');
-          } else {
-            window.location.href = 'https://www.responsibility.org/';
-          }
-        }
-      
-        // Show age gate only if not previously verified
-        window.onload = function () {
-          if (localStorage.getItem('ageVerified') !== 'true') {
-            document.getElementById('age-gate-overlay').style.display = 'flex';
-          } else {
-            document.getElementById('age-gate-overlay').style.display = 'none';
-          }
-        };
-      </script>
-      <script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
-        
-        function plusSlides(n) {
-          showSlides(slideIndex += n);
-        }
-        
-        function showSlides(n) {
-          let i;
-          let slides = document.getElementsByClassName("slide");
-          if (n > slides.length) { slideIndex = 1 }
-          if (n < 1) { slideIndex = slides.length }
-          for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-          }
-          slides[slideIndex - 1].style.display = "block";
-        }
-      /*navbar colorchange*/
-        const navbar = document.getElementById('navbar');
-        const navItems = document.querySelectorAll('.nav-list li');
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
 
-        navItems.forEach(item => {
-        const color = item.getAttribute('data-color');
+  function showSlides(n) {
+    const slides = document.getElementsByClassName("slide");
+    if (n > slides.length) slideIndex = 1;
+    if (n < 1) slideIndex = slides.length;
+    for (let slide of slides) {
+      slide.style.display = "none";
+    }
+    slides[slideIndex - 1].style.display = "block";
+  }
+</script>
 
-        item.addEventListener('mouseenter', () => {
-        navbar.style.backgroundColor = color;
-        });
+<script>
+  // Navbar color change on hover
+  const navbar = document.getElementById('navbar');
+  const navItems = document.querySelectorAll('.nav-list li');
 
-        item.addEventListener('mouseleave', () => {
-        navbar.style.backgroundColor = ''; 
-        });
-      });
-        </script>
-        
-      
+  navItems.forEach(item => {
+    const color = item.getAttribute('data-color');
+
+    item.addEventListener('mouseenter', () => {
+      navbar.style.backgroundColor = color;
+    });
+
+    item.addEventListener('mouseleave', () => {
+      navbar.style.backgroundColor = '';
+    });
+  });
+</script>
+
 </body>
 </html>
 
