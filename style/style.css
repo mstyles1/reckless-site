@@ -509,14 +509,38 @@ h2 {
 
 /* Mobile responsive */
 @media (max-width: 768px) {
+  .hero-header {
+    overflow: visible; /* allow image overflow if needed */
+    padding: 1rem 0; /* add vertical padding */
+    min-height: 200px; /* ensure minimum height on mobile */
+  }
+
+  .hero-img {
+    object-position: center center; /* reset vertical shift on mobile */
+    max-height: 60vh; /* limit max height to viewport */
+    width: 100%;
+    height: auto;
+  }
+
+  .navbar-home {
+    padding: 0.5em 1em; /* add horizontal padding to keep nav away from edges */
+    box-sizing: border-box; /* include padding in total width */
+  }
 
   .nav-list {
-    gap: 0.5em; 
+    gap: 0.7em; /* reduce gap between nav items */
+    justify-content: center;
+    flex-wrap: wrap; /* allow nav items to wrap to next line */
   }
 
   .nav-list li a {
-    padding: 0.3em 0.5em;
-    font-size: 1.2em; 
+    font-size: 1.2em; /* smaller font size for mobile */
+    padding: 0.3em 0.6em; /* reduce horizontal padding */
+    white-space: nowrap; /* keep text on one line */
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis; /* add "..." if text is too long */
+    display: inline-block;
   }
   .partners {
     flex-direction: column;
