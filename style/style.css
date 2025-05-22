@@ -6,6 +6,7 @@ html {
     position: relative;
     width: 100%;
     overflow: hidden;
+
 }
 
 .hero-img {
@@ -32,7 +33,6 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 2em;
 }
 
 .nav-list li a {
@@ -345,27 +345,60 @@ h2 {
 
 /* Contact section */
 
-#insta-gallery {
-  text-align: center;
-  padding: 20px;
-}
-
 .social-embeds {
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px; 
+  max-width: 1000px; 
+  margin: 0 auto;
+  background-color: #D83148;
+  border: 2px solid white;
+  border-radius: 16px;
 }
 
-.instagram-embed,
-.facebook-embed {
-  flex: 1 1 300px; 
+
+.instagram-embed {
+  flex: 1 1 300px;
   max-width: 500px;
   min-width: 280px;
   border-radius: 16px;
+  background-color: #D83148; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
   box-sizing: border-box;
+  height: 600px;
+}
+
+.facebook-embed {
+  flex: 1 1 300px;
+  max-width: 500px;
+  min-width: 280px;
+  border-radius: 16px;
+  background-color: #D83148;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  height: 600px;
+  position: relative;
+}
+
+.fb-wrapper {
+  width: 100%;
+  max-width: 480px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
 }
+
 
 #contact {
   display: flex;
@@ -584,12 +617,15 @@ h2 {
     height: 120px;
   }
 
-  .insta-gallery {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
+  .social-embeds > div {
+    flex: 1 1 100%;
+    max-width: 100%;
+    height: auto;  /* let height be automatic */
+  }
+
+  .instagram-embed img {
+    height: auto;
+    object-fit: contain;  /* avoid cropping on small screens */
   }
 
   .contact-form {
