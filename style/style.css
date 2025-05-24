@@ -2,6 +2,15 @@ html {
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #141117;
+}
+
 .hero-header {
   position: relative;
   width: 100%;
@@ -13,10 +22,6 @@ html {
   height: auto;
   display: block;
   object-position: center -20px;
-}
-
-body {
-  background-color: #141117;
 }
 
 .navbar-home {
@@ -657,6 +662,24 @@ h2 {
     object-fit: contain; /* avoid cropping on small screens */
   }
 
+  .contact-section {
+    width: 100%;
+    box-sizing: border-box; /* include padding in width */
+    overflow-x: hidden; /* extra safeguard */
+  }
+  .contact-form {
+    width: 100%;
+    max-width: 100%; /* or whatever max you need */
+    margin: 0 auto; /* center it horizontally */
+    box-sizing: border-box;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
+    width: 100%;
+    box-sizing: border-box;
+  }
   .contact-form {
     display: flex;
     flex-direction: column;
